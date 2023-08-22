@@ -1,11 +1,6 @@
-def isCyclicRotation(p: str, q: str) -> int:
-    # Write your code here.
-    if len(p)==len(q):
-        if (p in q+q):
-            ans = 1
-            return ans
-        else:
-            ans = 0
-            return ans
-
-    
+def isCyclicRotation(p,q):
+    #    Write your code here.
+    st = p + p
+    if q in st:
+        return 1
+    return 0
